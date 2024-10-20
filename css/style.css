@@ -144,6 +144,62 @@ h2 {
     flex-direction: column;
     justify-content: center;
 }
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 20px;
+}
+form input,button {
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+}
+.formSection h2{
+    color: aliceblue;
+    font-weight: 700;
+    width: 350px;
+    text-align: left !important;
+}
+.formSection p{
+    color: #f3f3f3;
+    width: 300px;
+}
+.formSection{
+    width: 60%;
+    background-color: #8CC63F;
+    height: 500px;
+    background-repeat: no-repeat;
+    margin: auto;
+    position: relative;
+    top: 210px;
+    display: flex;
+    gap: 30px;
+    padding: 70px;
+    background-image: url(../images/Mask\ Group\ \(1\).png);
+    background-size: 60%, 50%, 50%, 50%, 50%; 
+    background-position: center, bottom center, center center, bottom, center;
+    justify-content: center;
+}
+.formSection  form{
+    margin-top: 10%;
+}
+.formSection div{
+    margin-top: 15%;
+}
+.formSection button{
+    padding: 20px;
+    color: #f3f3f3;
+    border-radius: 5px;
+    background-color: #14232A;
+    box-shadow: 5px 10px #3f3f3f ;
+    
+}
+.formSection textarea{
+    padding: 30px;
+    border: none;
+    border-radius: 5px;
+}
 footer{
     max-width: 100%;
     height: 400px;
@@ -153,7 +209,6 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
 }
 .second{
     padding-top: 120px;
