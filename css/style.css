@@ -8,20 +8,23 @@ body {
     margin:0;
     font-family: 'Circular Std';
 }
-
-.container{
-    height: 40px;
-    max-width: 100%;
+header {
     background: #14232A;
+
+}
+.container{
+    max-width: 1800px;
     display: flex;
-    padding: 30px;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
 
 }
  ul {
     width: 667px;
     display: flex;
     gap: 40px;
-    margin-left:400px ;
     margin-top: 10px;
     list-style-type:none ;
 }
@@ -41,7 +44,6 @@ header button {
     padding-bottom: 15px;
     color: aliceblue;
     box-shadow: -3px 3px 0px 0px  #14232A, -4px 4px 0px 0px #8CC63F  ;
-    margin-left: 150px;
 
 }
 header img{
@@ -209,7 +211,6 @@ form input,button {
 }
 footer{
     max-width: 100%;
-    height: 400px;
     background: #14232A;
     margin-top: 150px;
     text-align: center;
@@ -260,56 +261,43 @@ footer{
     margin-top: 3px;
 }
 footer ul{
-    margin-left: 35% !important;
+    justify-content: center;
+    width: 100% !important;
+    padding-left: 0px;
 }
 footer p{
     color: #4d5052;
 }
 
-
-@media (max-width: 1400px) {
+@media (max-width: 1022px) {
+header button{
+    margin: auto !important;
     
-    header ul{
-        margin-left: 100px !important;
-    }
-  
-    .container button{
-        margin-left: 0px !important;
-        box-shadow: none;
-        padding-left: 40px;
-        padding-right: 40px;
-        font-size: 10px;
-
-    }
-  
-
 }
+}
+
 @media (max-width: 1200px) {
-    body{
-        overflow-x: hidden;
-    }
+   
  .cont p{
     margin-left: 25% !important;
  }
     .part1{
         margin-left: 15% !important;
     }
+   
     header ul {
         display: block !important;
         margin-top: 0 !important;
     }
-    .container button {
-        margin-left: -60% !important;
+    .narrow{
+        display: none;
     }
-    footer ul {
-        margin-left: -10% !important ;
-    }
+   
+   
 
 }
 @media (max-width: 768px) {
-    body{
-        overflow-x: hidden;
-    }
+   
     .cont p{
         margin-left: 20% !important;
      }
@@ -318,6 +306,9 @@ footer p{
     }
     .cont p{
         margin-left: 30%;
+    }
+    header button{
+        margin: auto;
     }
   
     footer{
@@ -330,16 +321,14 @@ footer p{
     header ul {
         display: none !important;
     }
-    .container button{
-        margin-left: 10% !important;
-    }
-
+   
+.narrow{
+    display: none;
+}
 }
 
 @media (max-width: 480px) {
-    body{
-        overflow-x: hidden;
-    }
+   
     .part1{
         margin-left: 0 !important;
     }
